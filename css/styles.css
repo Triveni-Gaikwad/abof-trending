@@ -1,0 +1,1272 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('../fonts/new/Gotham-Bold.eot');
+  src: url('../fonts/new/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/new/Gotham-Bold.woff2') format('woff2'),
+	url('../fonts/new/Gotham-Bold.woff') format('woff'),
+	url('../fonts/new/Gotham-Bold.ttf') format('truetype'),
+	url('../fonts/new/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../fonts/new/Gotham-Book.eot');
+  src: url('../fonts/new/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/new/Gotham-Book.woff2') format('woff2'),
+       url('../fonts/new/Gotham-Book.woff') format('woff'),
+       url('../fonts/new/Gotham-Book.ttf') format('truetype'),
+	   url('../fonts/new/Gotham-Book.otf') format('opentype'),
+       url('../fonts/new/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../fonts/new/Gotham-Medium.eot');
+  src: url('../fonts/new/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/new/Gotham-Medium.woff2') format('woff2'),
+       url('../fonts/new/Gotham-Medium.woff') format('woff'),
+       url('../fonts/new/Gotham-Medium.ttf') format('truetype'),
+       url('../fonts/new/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'DidotLTStd-Roman';
+  src: url('../fonts/DidotLTStd-Roman.eot');
+  src: url('../fonts/DidotLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/DidotLTStd-Roman.woff2') format('woff2'),
+       url('../fonts/DidotLTStd-Roman.woff') format('woff'),
+       url('../fonts/DidotLTStd-Roman.ttf') format('truetype'),
+       url('../fonts/DidotLTStd-Roman.svg#DidotLTStd-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{margin:0px; padding:0px;  font-family: 'Gotham-Book';}
+
+img, video{max-width:100%; height:auto; border:0;}
+
+.wrapper{margin:0px auto; padding:0px; width:980px;}
+.main-content{margin:0px auto; padding:0px; width:980px;}
+
+.top-nav{margin:60px 0px 30px 0px; padding:0px; width:100%; float:left; position:static; left:0; top:0; background:none;}
+.back-to, .pre-next{margin:0px; padding:0px; width:50%; float:left;}
+.pre-next{float:right; text-align:right;}
+.pre-next a{padding:0px 10px 0px 0px; display:inline-block;}
+.pre-next a:nth-child(2){padding:0px;}
+.back-to a{margin:0px; padding:9px 0px 0px 0px; text-decoration:none; font-size:13px; color:#000; display:inline-block;}
+
+.trending-inner-content{margin:0px; padding:0px; width:100%; float:left; position:relative; text-align:left;}
+.look-of-day{margin:0px; padding:0px 40px 35px 0px; width:540px; float:left; position:relative;}
+.items{margin:0px; padding:0px; width:400px; float:right; position:absolute; top:0; right:0;}
+.items ul{margin:0px; padding:0px; list-style:none; width:auto; float:none; text-align:left;}
+.items ul li{margin:0px 0px 30px 0px; padding:0 2% 2% 2%; width:46%; float:left; text-align:left;}
+.items ul li p{margin:0px; padding:5px 0px; color:#5f5f5f; font-size:15px;}
+.share{margin:12px 0px 0px 0px; border:1px solid #b7b7b7; padding:12px 30px 12px 65px; background:url(../images/share.png) 25px center no-repeat; text-decoration:none; color:#5a5a5a; font-size:16px; display:inline-block; width:auto;}
+.shop{margin:12px 0px 0px 0px; padding:13px 40px 13px 85px; background:#ce269d url(../images/shop.png) 45px center no-repeat; text-decoration:none; color:#fff; font-size:16px; display:inline-block; width:auto; font-family: 'Gotham-Medium';}
+.look-of-day-para{margin:0px; padding:0px 0% 10px 6%; width:91%; float:left; text-align:left; line-height:22px;}
+.likes, .fill{margin:5px 0px 15px 0px; padding:6px 0px 3px 25px; display:block; width:110px; background:url(../images/likes.png) left center no-repeat; text-decoration:none; font-size:14px; color:#777777; position:relative;}
+.fill{background:url(../images/likes-fill.png) left center no-repeat;}
+.title{margin:0px 5%; padding:5%; width:73%; background:rgba(255,255,255,0.8); position:absolute; bottom:-22px; left:0; text-align:left;}
+.title h3{margin:0px; padding:0px; font-size:16px; color:#000;}
+.time, .time-inline{margin:0px 0px 15px 18px; padding:0px; font-size:12px; color:#898989; display:block;}
+.time-inline{margin:0px 0px 15px 10px!important; display:inline-block;}
+.title h1{margin:0px; padding:0px; font-size:41px; color:#000; font-family: 'DidotLTStd-Roman';}
+.yellow-cir, .pink-cir, .greenL-cir{width:14px; height:14px; background:#f6ac4b; border-radius:50%; display:inline-block;}
+.pink-cir{background:#d403a7;}
+.greenL-cir{background:#bfe100;}
+
+.ralated-stories{margin:30px 0px 30px 0px; padding:0px; width:959px; float:left; position:relative;}
+.rs-title{margin:0px 0px 35px 40px; padding:0px; width:180px; float:left; font-size:16px; color:#000;}
+.bt{margin:10px 0px 35px 0px; border-top:1px solid #000; width:710px; float:left;}
+.bottom-title{margin:0px 0px; padding:10px 0px; font-size:10px; color:#181818; text-align:left; border-right:1px solid #eaeaea; box-shadow:1px 0px 1px #ccc; width:97%;} 
+
+.bottom-head{margin:0px 8px; padding:15px 5px; font-size:12px; text-align:left; width:94.5%; box-shadow:1px 0px 1px #ccc; border-bottom:2px solid #E2E2E2; font-size:12px; color:#272727; display:inline-block; text-align:left; border-right:1px solid #E2E2E2; border-radius:0px 0px 5px 5px;}
+.yellow-cir1, .green-cir, .blue-cir{margin:0px 5px 0px 0px; width:9px; height:9px; background:#f6ac4b; border-radius:50%; display:inline-block;}
+.green-cir{background:#a3d214;}
+.blue-cir{background:#4da4ee;}
+.view-more{margin:20px 0px; border:1px solid #959595; padding:15px 40px; text-decoration:none; color:#959595; font-size:16px; display:inline-block; text-align:center;}
+.find-style-btn{background:#d129a0; border:0; color:#fff; font-size:18px;}
+.view{margin:0px; padding:0px; width:100%; float:left; text-align:center;}
+.share-shop, .shop-look{margin:0px; padding:0px; width:100%; float:left;}
+.shop-look .shop-action{margin:12px 0px 0px 0px; padding:13px 40px 13px 40px; background:#ce269d; text-decoration:none; color:#fff; font-size:16px; display:inline-block; width:auto; font-family: 'Gotham-Medium';}
+.share-shop .shop-new{background:#ce269d; width:57%;}
+
+
+.hotnot{position:static; top:auto; left:auto; width:45%; float:left;}
+.hotnot .title{padding:0 5%; position:static; top:auto; left:auto; width:90%;}
+.hotnot .title h1{font-size:38px;}
+.hotnot .look-of-day-para{padding:0px 6% 10px 5%;}
+.shop-story{color:#b619a6; text-decoration:none;}
+.verdict{padding:0px 0 10px 0%; color:#646464; display:inline-block; width:95%; font-family: 'Gotham-Medium';}
+.hotornot{margin:0px; padding:0px 5% 10px 5%; width:90%; float:left;}
+.hotornot ul{margin:10px 0px; padding:0px; list-style:none; display:inline-block; width:100%!important;}
+.hotornot ul li{margin:0px; padding:0px; width:50%; float:left;}
+.hotornot ul li a.hot, .hotornot ul li a.not{margin:0px; padding:8px 15px 8px 45px; background:#f2be0a url(../images/hot.png) 8px center no-repeat; color:#fff; border-radius:20px; font-size:20px; text-decoration:none; font-family: 'Gotham-Medium';}
+.hotornot ul li a.not{background:#9a9a9a url(../images/not.png) 8px center no-repeat;}
+.progress{margin:5px 0px 0px 0px; padding:0px; width:80%; height:5px; background:#9a9a9a; float:left;}
+.bar, .bar1{margin:0px; padding:0px; background:#f2be0a; width:68%; height:5px;}
+.increase, .decrease{margin:20px 0px 0px 0px; padding:0px; width:40%; float:left; color:#535353; font-size:14px; text-align:left; font-family: 'Gotham-Medium';}
+.decrease{text-align:right;}
+.m-top{margin:40px 0px 0px 0px;}
+.hotnot .time{margin:0px 0px 20px 10px; font-size:15px; color:#000;}
+.title-hotnot{margin:0px 0px 10px 0px; padding:0px; width:100%; float:left; text-align:left;}
+.fashion-reviews .title-hotnot{margin:0px 0px 10px 0px; padding:0px; width:100%; float:left; text-align:left;}
+.title-hotnot h3{margin:0px; padding:0px; font-size:16px; color:#000;}
+.title-hotnot .time{margin-bottom:5px;}
+.title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:41px; color:#000; font-family: 'DidotLTStd-Roman';}
+.fashion-reviews .title-hotnot h1{margin:0px 0px 10px 0px; padding:0px; font-size:30px; color:#000; font-family: 'DidotLTStd-Roman'; line-height:normal;}
+
+.look-of-day-hotnot{margin:0px; padding:0px 20px 35px 0px; width:560px; position:relative; float:left;}
+.look-of-day-hotnot img{width:100%;}
+
+
+.fashion-reviews-pic{margin:0px; padding:0px 0px 35px 0px; width:494px; position:relative; float:left;}
+.fashion-reviews-pic img{width:100%;}
+.fashion-reviews{margin:0px; padding:0px; width:486px; float:left; position:relative; min-height:722px;}
+.fashion-editor, .trend-editor{margin:15px 0 10px 0; padding:0; width:100%; float:left;}
+.fashion-editor ul{margin:0; padding:0; list-style:none; display:inline-block;}
+.fashion-editor ul li{margin:0; padding:5px 5px; float:left;}
+.fashion-editor ul li p{margin:3px 0; padding:0; font-size:15px;}
+.para-size{font-size:18px;}
+.share-img{font-size:14px; float:right; text-decoration:none; color:#000;}
+.share-img img{margin:0px 5px 0px 0px; width:18px; vertical-align:middle;}
+.rs-title-middle{margin:0; padding:0 15px; position:absolute; left:37%; top:0; background:#fff;}
+.bt-full{margin:10px 0px 35px 0px; border-top:1px solid #000; width:100%; float:left;}
+.italic{margin:0px; padding:0px; font-size:22px; font-family: 'DidotLTStd-Roman'; font-style:italic; font-weight:normal; color:#000;}
+.shop-look{position:absolute; bottom:0; left:auto;}
+.news-inside{margin:0; padding:0 0 0 5%; width:95%; position:absolute; bottom:0; left:0px; background:#fff;}
+.first-letter:first-letter{font-size:50px; font-family: 'DidotLTStd-Roman';}
+.m-top-25{margin-top:27px;}
+.news-inside .shop-look{position:static; margin:0 0 0 0px;}
+
+
+.quiz{margin:0; padding:0; width:100%; float:left;}
+.find-style{margin:0 0 10px 0; padding:0; list-style:none; display:inline-block; width:100%;}
+.find-style li{margin:0; padding:0px 0px 8px 8px; float:left; width:23%; text-align:left;}
+.find-style li img{width:100%;}
+.find-style li a{margin:0px; padding:0px; display:inline-block; position:relative;}
+.find-style li:first-child{padding-left:0;}
+.dark-check, .dark-check1{margin:0; padding:0; width:100%; height:98%; display:inline-block; position:absolute; top:0; left:0; background:rgba(0,0,0,0.5) url(../images/checked.png) center center no-repeat;}
+
+.quiz-v2-title{margin:10px 0 0 0; padding:0; width:100%; text-align:center; float:left;}
+.quiz-v2-title .likes{margin:0 auto; width:65px;}
+.quiz-v2-title p{padding:0; text-align:left;}
+.quiz-v2-title h2{margin:10px auto 0 auto; width:70%; font-family: 'DidotLTStd-Roman'; font-style:italic;}
+.quiz-v2-title h2 p{margin:5px 0px 0px 0px; padding:0; text-align:center; font-family: 'Gotham-Book'; font-size:13px; color:#808080; font-style:normal;}
+.bottom-stories{margin:20px 0 50px 0; padding:0; width:100%; float:left;}
+.trend-story{margin:0 0 90px 0; padding:0; position:relative; vertical-align:top; width:33%; float:left; text-align:center;}
+.trend-story-msg{margin:0 10%; padding:0 1%; width:78%; background:#fff; position:absolute; bottom:-70px; left:auto;}
+.trend-story-msg h5, .trend-story-msg p{margin:10px 0 3px 0; padding:0; text-align:center; font-size:17px;}
+.trend-story-msg p{text-align:left}
+.trend-story-msg p{margin:5px 0 3px 0; text-align:left; font-size:14px;}
+.trend-story p.story-txt{margin:0; padding:0; font-size:24px; font-family: 'DidotLTStd-Roman'; font-style:italic;}
+
+.qna{margin:30px 0 30px 0; padding:0; width:100%; float:left;}
+.qna ul{margin:0; padding:0; list-style:none; width:100%; float:left;}
+.qna ul li{margin:0; padding:3px 0; display:inline-block; width:100%;}
+.qna ul li h2.question-no, .qna ul li h4.question{margin:0 10px 0 0; padding:0px 0px 0px 0px; color:#ca2790; font-size:45px; float:left; vertical-align:middle; text-align:left;}
+.qna ul li h4.question{margin:0; padding:0; font-size:20px;}
+.celeb-avatar{margin:0 0 25px 0; border:1px solid #000; padding:9px; border-radius:3px; width:65px; height:65px; position:relative; float:left;}
+.qna ul li p{margin:0 0 25px 20px; padding:0; font-size:17px; color:#000; float:left; width:85%; text-align:left;}
+.arrow-avatar{display:inline-block; background:url(../images/celeb-pic-arrow.png) no-repeat; width:10px; height:17px; position:absolute; right:-10px; top:40%;}
+.answer{margin:0; padding:0; width:100%; float:left;}
+
+
+.p-lt-none{padding-left:0;}
+.ff{font-family: 'DidotLTStd-Roman';}
+
+.quiz-large-img{margin:0;}
+
+
+/* loader page styles starts here */
+
+/*=header=*/
+.header{margin:0; border-bottom:1px solid #000; padding:10px 0 5px 0; width:100%; height:auto; float:left;}
+.logo{width:100px; height:50px; margin:10px auto 0 auto;}
+
+/*=header=*/
+
+/*=fashioncontent=*/
+.fashionreelcontent{width:100%; height:auto; margin:0px; float:left; padding:0;}
+.fashionreel{width:100%; height:auto; font-size:40px; margin:20px auto 0 auto; text-align:center; font-family: 'Gotham-Bold';}
+.fashioncontent{width:100%; margin:10px auto; height:auto; font-size:20px; text-align:center; padding:10px 0; font-family: 'Gotham-Bold'; color:#666;}
+/*=fashioncontent=*/
+
+
+
+/*bodycontent=*/
+.bodycontent{width:100%; height:auto; margin:0 0 0 0;  float:left;}
+.story-category{width:31%; height:auto; margin:2% 0 0 2%; box-shadow:1px 1px 8px #C2C2C2; float:left; border-radius:4px; min-height:437px;}
+
+.image1{width:100%; height:auto; margin:0px; float:left; }
+.image1 img{width:100%; border-radius:4px 4px 0px 0px; height:326px; overflow-y:hidden;}
+.dot1, .dot2, .dot3{width:10px; height:10px; background:#e4bf2f; float:left; border-radius:20px; margin:3px 7px 0 10px;}
+.dot2{background:#b1cf32;}
+.dot3{background:#70a1ea;}
+
+.date{width:100%; height:auto; margin:5px 0 5px 0px; float:left; font-size:12px; color:#0A0A0A; border-bottom:1px solid #ccc; padding:0 0 3px 0;}
+.contentline{width:100%; height:1px;  background:#1f1f1f; float:left;}
+.content{width:95%; height:auto; margin:10px; float:left;}
+.content h1{font-size:15px; color:#333; margin:0px 0px 5px 0px; padding:0;}  
+.content p{font-size:12px; font-style:normal; color:#333; text-align:left; margin:0px 0 5px 0; padding:0;}
+/*bodycontent=*/
+
+/* loader page styles ends here */
+
+
+.event-reviews{margin:0; padding:0 5%; width:90%; float:left;}
+.event-look-one{margin:0 0 30px 0; padding:0; width:100%; float:left; position:relative;}
+.left-large-img{margin:0 4% 15px 0; padding:0; width:45%; float:left;}
+.left-large-img img{width:100%;}
+.event-right{margin:0; padding:0; width:50%; float:left; position:relative;}
+.event-reviews h2, .event-right p{margin:8px 0 8px 0; padding:0; font-size:22px;}
+.event-right p{font-size:16px;}
+.event-look-one .view{text-align:left; position:absolute; bottom:5px; left:49%; width:250px;}
+.event-look-one .view .view-more{margin:20px 0; margin-bottom:0; width:100%; padding-left:0; padding-right:0;}
+.triangle{border-right:30px solid #fff; border-top:30px solid transparent; border-bottom:30px solid transparent; width:0; height:0; display:inline-block; position:absolute; bottom:13%; left:-65px;}
+.event-look-two{margin:0 0 30px 0; padding:0; width:100%; float:left; position:relative;}
+.look-two-content{margin:0; padding:15px 15px 15px 0px; width:35%; background:#fff; position:absolute; bottom:0; left:0; float:none;}
+.look-two-content .triangle{right:-30px; left:auto; bottom:70%; transform:rotate(180deg); -webkit-transform:rotate(180deg); -ms-transform:rotate(180deg); -moz-transform:rotate(180deg);}
+.event-look-two .view{text-align:left; position:absolute; bottom:0px; left:0; width:250px;}
+.event-look-two .view .view-more{margin:20px 0;  margin-bottom:0; margin-top:30px; width:100%; padding-left:0; padding-right:0;}
+.look-two-content p{margin-bottom:100px;}
+.event-look-three{margin:0 0 30px 0; padding:0; width:100%; float:left; position:relative;}
+.event-look-three .view{text-align:left; position:absolute; bottom:5px; left:0; width:250px;}
+.event-look-three .view .view-more{ margin:20px 0; margin-bottom:0; width:100%;padding-left:0; padding-right:0;}
+.event-look-three .event-right{margin:0 4% 0 0; width:45%;}
+.event-look-three .left-large-img{margin:0; padding:0; width:50%; float:left;}
+.event-look-three .triangle{left:auto; right:-65px; transform:rotate(180deg); -webkit-transform:rotate(180deg); -ms-transform:rotate(180deg); -moz-transform:rotate(180deg); bottom:13%;}
+.lookone-mini-img, .lookone-content{margin:0; padding:0; width:100%; float:left;}
+.quiz-v2-title p.event-para{padding:0 5%;}
+
+.fashion-stories{margin:0; padding:0; width:638px; float:left; min-height:initial!important;}
+.fashion-story-img{margin:0; padding:0; width:342px; float:left;}
+.fashion-story-img img{width:100%;}
+.fashion-stories .look-of-day-para{margin:10% 0px 0px -5%; padding:20px 0px 30px 5%!important; width:41%; background:#fff;}
+.fashion-stories .shop-look{position:static; left:auto; bottom:auto;}
+.fashion-stories .shop-look .shop-action{padding-left:0; padding-right:0; text-align:center; width:100%;}
+.fashion-middle-story{margin:0; padding:0; width:50%; float:right;}
+.fashion-middle-story ul{margin:0; padding:0; list-style:none; text-align:center; width:100%; float:left;}
+.fashion-middle-story ul li{padding:25px 0px; width:49%; display:inline-block; vertical-align:top; position:relative;}
+.fashion-middle-story ul li p{font-size:14px; padding:0;}
+.stories-bottom{margin:0; padding:0; width:100%; float:left;}
+.stories-bottom ul{margin:0; padding:0; list-style:none; text-align:center; width:50%; float:left;}
+.stories-bottom ul li{padding:10px 0px;}
+
+
+.share-parent{margin:0; padding:0; float:right; position:relative;}
+.share-popup{margin:0px; padding:0px; display:inline-block; position:absolute; top:24px; right:0; width:122px; display:none; background:#fff; z-index:1001; height:66px;}
+.share-popup ul{margin:15px 0px 0px 0px; padding:0px; list-style:none; border:1px solid #8e8e8e; display:inline-block; width:120px;}
+.share-popup ul li{margin:5px 0px 0px 0px; padding:5px; float:left; width:auto;}
+.uparrow-share{margin:0px 0px 0px 0px; padding:0px; display:inline-block; background:url(../images/up-arrow-share.png) no-repeat; width:30px; height:17px; position:absolute; top:0; right:42px;}
+.share-popup ul li a img{width:auto;}
+
+.share-shop{position:relative;}
+.share-shop .share-popup{left:0; right:auto; top:64px; z-index:1001;}
+.share-shop .uparrow-share{margin:-15px 0px 0px 0px; right:52px;}
+
+
+.position-fstory, .position-fstory-1{position:static; top:auto; left:auto; width:auto; background-color:none; font-size:14px;}
+.margin-xs{margin-bottom:0px;}
+
+.read-more{text-decoration:none; color:#CE269D; padding:0px 0px 0px 0px; font-size:14px; margin-bottom:10px;}
+.hide-more{margin:10px 0px 0px 0px; display:none; float:left;}
+
+.rm-height, .rm-height-look{height:115px; overflow-y:hidden;}
+
+
+/* slider new styles starts here */
+#wrapper {
+    width: 980px;
+    margin: 20px auto;
+	font-family: 'Gotham-Book';
+}
+#carousel {
+    position: relative;
+	
+	
+}
+.viewport {
+    width: 928px;
+    border: 0px solid #6e6e6e;
+    height: 430px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 29px;
+	clear:both;
+	
+}
+.prev, .next {
+    position: absolute;
+}
+.prev {
+    top: 37%;
+    left: 0;
+}
+.next {
+    top: 37%;
+    right: 0;
+}
+
+.viewport ul {
+    position: absolute;
+	list-style:none;
+	margin:0;
+	padding:0;
+	
+}
+.viewport li {
+    float: left;
+    margin-right: 10px;
+	box-shadow:-1px 4px 8px -4px rgba(0,0,0,0.25);
+	border-radius:5px;
+}
+.viewport li a {
+    display: block;
+    width: 300px;
+    height: auto;
+    background: none;
+	text-decoration:none;
+}
+.viewport li a img{border-radius:5px 5px 0px 0px;}
+.viewport li a h4, .viewport li a h5, .viewport li a p{margin:0px; padding:5px; color:#393939;}
+.viewport li a h4{padding:10px 5px 10px 10px; font-size:12px;}
+.viewport li a h5{border-bottom:1px solid #eaeaea; padding:7px 5px; font-size:10px; font-weight:normal;}
+.viewport li a p{padding:0 5px 8px 5px; font-size:13px;}
+img{max-width:100%; height:auto;}
+/* slider new styles ends here */
+
+.top-gap-mobile{margin:0px 0px 0px 0px;}
+
+
+
+
+
+
+/* responsive styles starts here */
+
+@media only screen and (min-width: 320px) {
+
+	.main-content{margin:0px auto; padding:0px; width:100%;}
+	.wrapper{margin:0px auto; padding:0px; width:100%;}
+	.top-nav{margin:0px 0px 0px 0px; padding:5px 2%; width:96%; position:fixed; left:0; top:0; background:rgba(255,255,255,0.8); z-index:1001;}
+	.trending-inner-content{margin:0px; padding:0px; width:100%; text-align:center;}
+	.look-of-day{margin:0px; padding:0px 0px 35px 0px; width:100%; position:relative;}
+	.look-of-day-hotnot{margin:0px; padding:0px 0px 35px 0px; width:100%; position:relative;}
+	.look-of-day img.look{width:100%;}
+	.title{margin:0px 10%; padding:5%; width:70%; position:absolute; bottom:-6px; left:0;}
+	.items{margin:0px; padding:0px; width:100%; position:static; top:0; right:0;}
+	.ralated-stories{margin:30px 0px 30px 0px; width:100%;}
+	.bt{margin:10px 0px 35px 0px; width:50%;}
+	.nbs-flexisel-nav-left{left: 2px;}
+	.nbs-flexisel-nav-right{right: -59px;}
+	.nbs-flexisel-container{margin-left:0px; position:relative; max-width:80%; width:80%;}	
+	.nbs-flexisel-item img{width: 95%;}
+	.nbs-flexisel-nav-left, .nbs-flexisel-nav-right{top:110px!important;}
+	.bottom-head{margin:0px; padding:15px 0px; font-size:9px; text-align:left; width:94%;}
+	.look-of-day-para{padding:0px 6% 10px 10%; width:80%; text-align:left;}
+	.fashion-reviews .look-of-day-para{padding:0px 2% 10px 2%; width:95%; text-align:left;}
+	.back-to a{font-size:12px; padding-left:0px;}
+	.title h1, .hotnot .title h1{font-size:25px;}
+	.share{padding:12px 0px 12px 0px; background:url(../images/share.png) 15% center no-repeat; font-size:14px; width:40%;}
+	.shop{padding:13px 0px 13px 0px; background:#ce269d url(../images/shop.png) 10% center no-repeat; font-size:14px; width:59%;}
+	.rs-title{margin:0px 0px 35px 10px; width:130px; font-size:12px;}
+	.view-more{margin:20px 2%; padding:15px 0px; width:65%;}
+	.items ul{margin:0px; width:auto; float:none;}
+	.share-shop, .shop-look{margin:0px; width:100%;}
+	.bottom-title{font-size:8px; margin:0px; padding:10px 0 10px 2%; width:95%;}
+	
+	.verdict{padding:0 0 10px 0%;}
+	
+	.hotnot{margin:0px 5% 0px 5%; position:static; top:auto; left:auto; width:90%; float:left; position:relative; z-index:1001;}
+	.hotornot{margin:0px; padding:0px 0% 10px 0%; width:100%; float:left;}
+	.hotornot ul{width:80%!important;}
+	.increase, .decrease{margin:20px 5% 0px 5%;}
+	.progress{margin:5px 0px 0px -5%; width:110%;}
+	.hotnot .title{padding:10px 2%;}
+	.hotnot .time{margin:5px 0px 20px 15px; font-size:13px; color:#898989; display:block;}
+	
+	.title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:25px;}
+	.fashion-reviews .title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:20px;}
+	.title-hotnot h3{margin:0px 0px 0px 0px;}
+	.likes, .fill{margin:5px 0px 15px 0px;}
+	.title-hotnot{margin:50px 0px 10px 0px; padding:0 2%;  width:96%;}
+	.title-quiz-v2{margin-top:-20px;}
+	.fashion-reviews .title-hotnot{margin:0px 0px 10px 0px; padding:0; width:100%;}
+	
+	.nbs-flexisel-item img {max-width:200px; max-height:200px;}
+	
+	.fashion-reviews-pic{margin:0px; padding:0px 0px 35px 0px; width:100%;}
+	.fashion-reviews{margin:0px; padding:0px; width:100%; min-height:300px;}
+	.para-size{font-size:14px;}
+	.italic{font-size:16px;}
+	.shop-look .shop-action{margin:12px 0px 0px 0px; padding:13px 0px 13px 0px; font-size:16px; width:100%; text-align:center;}
+	.rs-title-middle{margin:0; padding:0 15px; left:16%;}
+	.bt-full{margin:10px 2% 35px 2%; width:96%;}
+	.shop-look{position:static; bottom:auto; left:auto;}
+	
+	.news-inside{margin:0; padding:0 0 0 0; width:100%; position:static; bottom:auto; left:auto;}
+	.first-letter:first-letter{font-size:25px;}
+	.news-inside .shop-look{position:static; margin:0 0 0 0px;}
+	
+	
+	.quiz{margin:0 2% 0 2%; padding:0; width:96%;}
+	.quiz h3{text-align:left; font-size:14px;}
+	.find-style li{margin:0; padding:0px 0px 8px 8px; float:left; width:47%;}
+	.find-style li:first-child, .find-style li:nth-child(3){padding-left:0;}
+	.find-style li:nth-child(2), .find-style li:nth-child(4){float:right; text-align:right; padding-right:0;}
+	
+	.quiz-v2-title{margin:10px 0 0 0; padding:0; text-align:left;}
+	.quiz-v2-title .likes{margin:0 0 0 0px; width:65px;}
+	.quiz-v2-title h2{margin:10px auto 0 auto; width:96%;}
+	.quiz-v2-title p{padding:0 2%; text-align:left;}
+	.hidden-md{display:block;}
+	.hidden-xs{display:none;}
+	.trend-editor{margin:0px 0 10px 0; padding:0 2%; width:96%;}
+	.trend-story p.story-txt{margin:0; padding:0; font-size:13px;}
+	.trend-story{margin:0 10px 90px 0; width:45%; float:left;}
+	.trend-story-msg h5, .trend-story-msg p{margin:10px 0 3px 0; text-align:center; font-size:12px;}
+	.bottom-stories{margin:20px 0 50px 0; padding:0 0 0 2%; width:98%;}
+	
+	.quiz-version-two{padding-left:2%; width:90%;}
+	.share-shop .shop-new{background:#ce269d; width:96%;}
+	
+	.quiz-large-img{margin:0 -2%;}
+	
+	.qna{margin:30px 0 30px 0; padding:0 2%; width:96%;}
+	.qna ul li h2.question-no, .qna ul li h4.question{margin:0 10px 0 0; padding:0; font-size:30px; width:10%;}
+	.qna ul li h4.question{margin:0; padding:15px 0px 0px 0px; font-size:17px; width:85%;}
+	.qna ul li p{margin:0 0 25px 20px; padding:0; font-size:15px; color:#000; width:62%;}
+	
+	.story-category{width:97%; margin:10px 0 10px 2%; float:left; min-height:437px;}
+	.bodycontent{width:96%; margin:0 2% 0 2%;}
+	.fashionreelcontent{width:96%; margin:0 2% 0 2%;}
+	
+	.event-reviews{margin:0; padding:0 2%; width:96%;}
+	.event-look-one{margin:0 0 30px 0; padding:0; width:100%;}
+	.left-large-img{margin:0 0 15px 0; padding:0; width:100%;}
+	.event-right{margin:0; padding:0; width:100%;}
+	.event-right img{width:auto;}
+	.lookone-mini-img, .lookone-content{margin:0; padding:0; width:50%;}
+	.lookone-content{margin:0 0 0 5%; padding:0; width:45%;}
+	.event-look-one .view, .event-look-two .view{text-align:left; position:static; bottom:auto; left:auto; width:100%;}
+	.event-reviews h2, .event-right p{margin:0px 0px 8px 0px; padding:0; font-size:17px;}
+	.event-right p{font-size:15px;}
+	.look-two-content{margin:0; padding:0px; width:45%; position:static; bottom:auto; left:auto; float:left;}
+	.look-two-content p{margin-bottom:0px; font-size:15px;}
+	.event-look-three .left-large-img{margin:0; padding:0; width:49%; float:left;}
+	
+	#wrapper{width: 290px; margin: 20px auto;}
+	.viewport{width: 230px; height: 215px; margin:0 auto;}
+	.viewport li a{display: block; width: 108px; height: auto;}
+	.viewport li a h4{font-size:9px;}
+	.viewport li a h5{font-size:8px;}
+	.viewport li a p{font-size:11px;}
+	
+	.fashion-stories{margin:0; padding:0; width:100%;}
+	.fashion-stories .look-of-day-para{margin:0px 0px 0px 0px; padding:20px 2% 30px 2%!important; width:96%;}
+	.fashion-story-img{width:100%;}
+	.fashion-middle-story{width:100%; float:left;}
+	.fashion-middle-story ul li{padding:5px 0px; width:99%; vertical-align:top;}
+	.position-fstory, .position-fstory-1{position:absolute; top:10%; left:55%; width:30%; background-color:#fff;}
+	.position-fstory-1{top:5%; left:53%;}
+	.margin-xs{margin-bottom:30px;}
+	.left-position{left:11%;}
+	.full-width-trend{width:96%;}
+	
+	.rm-height{height:40px; overflow-y:hidden;}
+	.rm-height-look{height:70px; overflow-y:hidden;}
+	
+	.image1 img{height:auto; overflow-y:auto;}
+	
+	.hidden-xs-fs{display:none;}
+	.hidden-md-fs{display:block;}
+	.fashion-middle-story ul li.hidden-md-fs{display:block;}
+	.top-gap-mobile{margin:44px 0px 0px 0px;}
+	
+	.fashion-middle-story ul li p{font-size:14px; padding:15px 0;}
+	
+	
+
+}
+
+@media only screen and (min-width: 375px) {
+	
+	#wrapper{width: 350px; margin: 20px auto;}
+	.viewport{width: 293px; height: 215px; margin:0 auto;}
+	.viewport li a{display: block; width: 140px; height: auto;}
+	.viewport li a h4{font-size:9px;}
+	.viewport li a h5{font-size:9px;}
+	.viewport li a p{font-size:11px;}
+	
+	.hidden-xs-fs{display:none;}
+	.hidden-md-fs{display:block;}
+	.fashion-middle-story ul li.hidden-md-fs{display:block;}
+	.top-gap-mobile{margin:44px 0px 0px 0px;}
+	
+	.fashion-middle-story ul li p{font-size:14px; padding:15px 0;}
+
+}
+
+
+
+
+@media only screen and (min-width: 480px) {
+
+	.main-content{margin:0px auto; padding:0px; width:100%;}
+	.wrapper{margin:0px auto; padding:0px; width:100%;}
+	.top-nav{margin:0px 0px 0px 0px; padding:5px 2%; width:96%; position:fixed; left:0; top:0; background:rgba(255,255,255,0.8); z-index:1001;}
+	.trending-inner-content{margin:0px; padding:0px; width:100%; text-align:center;}
+	.look-of-day{margin:0px; padding:0px 0px 35px 0px; width:100%; position:relative;}
+	.look-of-day-hotnot{margin:0px; padding:0px 0px 35px 0px; width:100%; position:relative;}
+	.look-of-day img.look{width:100%;}
+	.title{margin:0px; padding:30px; width:65%; position:absolute; bottom:-22px; left:12%;}
+	.items{margin:0px; padding:0px; width:100%; position:static; top:0; right:0;}
+	.ralated-stories{margin:30px 0px 30px 0px; width:100%;}
+	.bt{margin:10px 0px 35px 0px; width:209px;}
+	.nbs-flexisel-nav-left{left: 9px;}
+	.nbs-flexisel-inner{margin-left:25px;}
+	.nbs-flexisel-nav-right{right: -40px;}
+	.nbs-flexisel-container{position:relative; max-width:90%; width:90%;}	
+	.nbs-flexisel-item img{width: 85%;}
+	.nbs-flexisel-nav-left, .nbs-flexisel-nav-right{top:120px!important;}
+	.bottom-head{margin:0px; padding:15px 0px; font-size:11px; text-align:left; width:82%;}
+	.look-of-day-para{padding:0px 6% 10px 6%; width:84%; text-align:left;}
+	.fashion-reviews .look-of-day-para{padding:0px 2% 10px 2%; width:95%; text-align:left;}
+	.back-to a{font-size:13px; padding-left:0px;}
+	.title h1, .hotnot .title h1{font-size:35px;}
+	.share{padding:12px 0px 12px 0px; background:url(../images/share.png) 30% center no-repeat; font-size:16px;  width:40%;}
+	.shop{padding:13px 0px 13px 0px; background:#ce269d url(../images/shop.png) 20% center no-repeat; font-size:16px; width:59%;}
+	.rs-title{margin:0px 0px 35px 40px; width:170px; font-size:15px;}
+	.view-more{margin:20px 2%; padding:15px 0px; width:55%;}
+	.items ul{margin:0px; width:auto; float:none;}
+	.share-shop, .shop-look{margin:0px; width:100%;}
+	.bottom-title{font-size:10px; margin:0px; padding:10px 0 10px 8%; width:83%;}
+	
+	.verdict{padding:0 0 10px 0%;}
+	
+	.hotnot{margin:0px 5% 0px 5%; position:static; top:auto; left:auto; width:90%; float:left; position:relative; z-index:1001;}
+	.hotornot{margin:0px; padding:0px 0% 10px 0%; width:100%; float:left;}
+	.hotornot ul{width:60%!important;}
+	.increase, .decrease{margin:20px 5% 0px 5%;}
+	.progress{margin:5px 0px 0px -5%; width:110%;}
+	.hotnot .title{padding:10px 5%;}
+	.hotnot .time{margin:5px 0px 20px 15px; font-size:13px; color:#898989; display:block;}
+	
+	.items ul li img{width:100%;}
+	
+	.title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:35px;}
+	.fashion-reviews .title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:20px;}
+	.title-hotnot h3{margin:0px 0px 0px 0px;}
+	.likes, .fill{margin:5px 0px 15px 0px;}
+	.title-hotnot{margin:50px 0px 10px 0px; padding:0 2%;  width:96%;}
+	.title-quiz-v2{margin-top:-20px;}
+	.fashion-reviews .title-hotnot{margin:0px 0px 10px 0px; padding:0;  width:100%;}
+	
+	.nbs-flexisel-item img {max-width:200px; max-height:200px;}
+	
+	.fashion-reviews-pic{margin:0px; padding:0px 0px 35px 0px; width:100%;}
+	.fashion-reviews{margin:0px; padding:0px; width:100%; min-height:300px;}
+	.para-size{font-size:14px;}
+	.italic{font-size:16px;}
+	.shop-look .shop-action{margin:12px 0px 0px 0px; padding:13px 0px 13px 0px; font-size:16px; width:100%; text-align:center;}
+	.rs-title-middle{margin:0; padding:0 15px; left:27%;}
+	.bt-full{margin:10px 2% 35px 2%; width:96%;}
+	.shop-look{position:static; bottom:auto; left:auto;}
+	
+	.news-inside{margin:0; padding:0 0 0 0; width:100%; position:static; bottom:auto; left:auto;}
+	.first-letter:first-letter{font-size:30px;}
+	.news-inside .shop-look{position:static; margin:0 0 0 0px;}
+	
+	.quiz{margin:0 2% 0 2%; padding:0; width:96%;}
+	.quiz h3{text-align:left; font-size:14px;}
+	.find-style li{margin:0; padding:0px 0px 8px 8px; float:left; width:47%;}
+	.find-style li:first-child, .find-style li:nth-child(3){padding-left:0;}
+	.find-style li:nth-child(2), .find-style li:nth-child(4){float:right; text-align:right; padding-right:0;}
+	
+	.quiz-v2-title{margin:10px 0 0 0; padding:0; text-align:left;}
+	.quiz-v2-title .likes{margin:0 0 0 0px; width:65px;}
+	.quiz-v2-title h2{margin:10px auto 0 auto; width:96%;}
+	.quiz-v2-title p{padding:0 2%; text-align:left;}
+	.hidden-md{display:block;}
+	.hidden-xs{display:none;}
+	.trend-editor{margin:0px 0 10px 0; padding:0 2%; width:96%;}
+	.trend-story p.story-txt{margin:0; padding:0; font-size:14px;}
+	.trend-story{margin:0 0 90px 0; width:45%; float:left;}
+	.trend-story-msg h5, .trend-story-msg p{margin:10px 0 3px 0; text-align:center; font-size:13px;}
+	.bottom-stories{margin:20px 0 50px 0; padding:0 0 0 2%; width:98%;}
+	
+	.quiz-version-two{padding-left:2%; width:90%;}
+	.share-shop .shop-new{background:#ce269d; width:96%;}
+	
+	.quiz-large-img{margin:0 -2%;}
+	
+	.qna{margin:30px 0 30px 0; padding:0 2%; width:96%;}
+	.qna ul li h2.question-no, .qna ul li h4.question{margin:0 10px 0 0; padding:0; font-size:30px; width:10%;}
+	.qna ul li h4.question{margin:0; padding:0; font-size:17px; width:85%;}
+	.qna ul li p{margin:0 0 25px 20px; padding:0; font-size:15px; color:#000; width:76%;}
+	
+	.story-category{width:97%; margin:10px 0 10px 2%; float:left; min-height:437px;}
+	.bodycontent{width:96%; margin:0 2% 0 2%;}
+	.fashionreelcontent{width:96%; margin:0 2% 0 2%;}
+	
+	.event-reviews{margin:0; padding:0 2%; width:96%;}
+	.event-look-one{margin:0 0 30px 0; padding:0; width:100%;}
+	.left-large-img{margin:0 0 15px 0; padding:0; width:100%;}
+	.event-right{margin:0; padding:0; width:100%;}
+	.event-right img{width:auto;}
+	.lookone-mini-img, .lookone-content{margin:0; padding:0; width:50%;}
+	.lookone-content{margin:0 0 0 5%; padding:0; width:45%;}
+	.event-look-one .view, .event-look-two .view{text-align:left; position:static; bottom:auto; left:auto; width:100%;}
+	.event-reviews h2, .event-right p{margin:0px 0px 8px 0px; padding:0; font-size:18px;}
+	.event-right p{font-size:15px;}
+	.look-two-content{margin:0; padding:0px; width:45%; position:static; bottom:auto; left:auto; float:left;}
+	.look-two-content p{margin-bottom:0px; font-size:15px;}
+	.event-look-three .left-large-img{margin:0; padding:0; width:49%; float:left;}
+	
+	#wrapper{width: 442px; margin: 20px auto;}
+	.viewport{width: 392px; height: 280px; margin:0 auto;}
+	.viewport li a{display: block; width: 190px; height: auto;}
+	.viewport li a h4{font-size:9px;}
+	.viewport li a h5{font-size:9px;}
+	.viewport li a p{font-size:11px;}
+	
+	.fashion-stories{margin:0; padding:0; width:100%;}
+	.fashion-stories .look-of-day-para{margin:0px 0px 0px 0px; padding:20px 2% 30px 2%!important; width:96%;}
+	.fashion-story-img{width:100%;}
+	.fashion-middle-story{width:100%; float:left;}
+	.fashion-middle-story ul li{padding:5px 0px; width:99%; vertical-align:top;}
+	.position-fstory, .position-fstory-1{position:absolute; top:10%; left:55%; width:30%; background-color:#fff;}
+	.position-fstory-1{top:5%; left:53%;}
+	.margin-xs{margin-bottom:30px;}
+	.left-position{left:11%;}
+	.full-width-trend{width:96%;}
+	
+	.rm-height{height:40px; overflow-y:hidden;}
+	.rm-height-look{height:80px; overflow-y:hidden;}
+	
+	.image1 img{height:auto; overflow-y:auto;}
+	
+	.hidden-xs-fs{display:none;}
+	.hidden-md-fs{display:block;}
+	.fashion-middle-story ul li.hidden-md-fs{display:block;}
+	.top-gap-mobile{margin:44px 0px 0px 0px;}
+	
+	.fashion-middle-story ul li p{font-size:14px; padding:15px 0;}
+
+
+	
+}
+
+
+@media only screen and (min-width: 568px) {
+
+	.main-content{margin:0px auto; padding:0px; width:100%;}
+	.wrapper{margin:0px auto; padding:0px; width:100%;}
+	.top-nav{margin:0px 0px 0px 0px; padding:5px 2%; width:96%; position:fixed; left:0; top:0; background:rgba(255,255,255,0.8); z-index:1001;}
+	.trending-inner-content{margin:0px; padding:0px; width:100%; text-align:center;}
+	.look-of-day{margin:0px; padding:0px 0px 35px 0px; width:100%; position:relative;}
+	.look-of-day-hotnot{margin:0px; padding:0px 0px 35px 0px; width:100%; position:relative;}
+	.look-of-day img.look{width:100%;}
+	.title{margin:0px; padding:30px; width:70%; position:absolute; bottom:-22px; left:10%;}
+	.items{margin:0px; padding:0px; width:100%; position:static; top:0; right:0;}
+	.ralated-stories{margin:30px 0px 30px 0px; width:100%;}
+	.bt{margin:10px 0px 35px 0px; width:57%;}
+	.nbs-flexisel-nav-left{left: 6px;}
+	.nbs-flexisel-nav-right{right: -48px;}
+	.nbs-flexisel-inner{margin-left:25px;}
+	.nbs-flexisel-container{position:relative; max-width:90%; width:90%;}	
+	.nbs-flexisel-item img{width: 90%;}
+	.nbs-flexisel-nav-left, .nbs-flexisel-nav-right{top:135px!important;}
+	.bottom-head{margin:0px; padding:15px 0px; font-size:11px; text-align:left; width:76.5%;}
+	.look-of-day-para{padding:0px 6% 10px 6%; width:84%; text-align:left;}
+	.fashion-reviews .look-of-day-para{padding:0px 2% 10px 2%; width:95%; text-align:left;}
+	.back-to a{font-size:13px; padding-left:0px;}
+	.title h1, .hotnot .title h1{font-size:35px;}
+	.share{padding:12px 0px 12px 0px; background:url(../images/share.png) 30% center no-repeat; font-size:16px; width:40%;}
+	.shop{padding:13px 0px 13px 0px; background:#ce269d url(../images/shop.png) 25% center no-repeat; font-size:16px; width:59%;}
+	.rs-title{margin:0px 0px 35px 40px; width:170px; font-size:15px;}
+	.view-more{margin:20px 2%; padding:15px 0px; width:50%;}
+	.items ul{margin:0px; width:auto; float:none;}
+	.share-shop, .shop-look{margin:0px; width:100%;}
+	.bottom-title{font-size:10px; margin:0px; padding:10px 0 10px 11%; width:77%;}
+	
+	.verdict{padding:0 0 10px 0%;}
+	
+	.hotnot{margin:0px 5% 0px 5%; position:static; top:auto; left:auto; width:90%; float:left; position:relative; z-index:1001;}
+	.hotornot{margin:0px; padding:0px 0% 10px 0%; width:100%; float:left;}
+	.hotornot ul{width:60%!important;}
+	.increase, .decrease{margin:20px 5% 0px 5%;}
+	.progress{margin:5px 0px 0px -5%; width:110%;}
+	.hotnot .title{padding:10px 5%;}
+	.hotnot .time{margin:5px 0px 20px 15px; font-size:13px; color:#898989; display:block;}
+	
+	.title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:35px;}
+	.fashion-reviews .title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:22px;}
+	.title-hotnot h3{margin:0px 0px 0px 0px;}
+	.likes, .fill{margin:5px 0px 15px 0px;}
+	.title-hotnot{margin:50px 0px 10px 0px; padding:0 2%;  width:96%;}
+	.title-quiz-v2{margin-top:-20px;}
+	.fashion-reviews .title-hotnot{margin:0px 0px 10px 0px; padding:0;  width:100%;}
+	
+	.nbs-flexisel-item img {max-width:200px; max-height:200px;}
+	
+	.fashion-reviews-pic{margin:0px; padding:0px 0px 35px 0px; width:100%;}
+	.fashion-reviews{margin:0px; padding:0px; width:100%; min-height:300px}
+	.para-size{font-size:14px;}
+	.italic{font-size:16px;}
+	.shop-look .shop-action{margin:12px 0px 0px 0px; padding:13px 0px 13px 0px; font-size:16px; width:100%; text-align:center;}
+	.rs-title-middle{margin:0; padding:0 15px; left:27%;}
+	.bt-full{margin:10px 2% 35px 2%; width:96%;}
+	.shop-look{position:static; bottom:auto; left:auto;}
+	
+	.news-inside{margin:0; padding:0 0 0 0; width:100%; position:static; bottom:auto; left:auto;}
+	.first-letter:first-letter{font-size:40px;}
+	.news-inside .shop-look{position:static; margin:0 0 0 0px;}
+	
+	.quiz{margin:0 2% 0 2%; padding:0; width:96%;}
+	.quiz h3{text-align:left; font-size:14px;}
+	.find-style li{margin:0; padding:0px 0px 8px 8px; float:left; width:47%;}
+	.find-style li:first-child, .find-style li:nth-child(3){padding-left:0;}
+	.find-style li:nth-child(2), .find-style li:nth-child(4){float:right; text-align:right; padding-right:0;}
+	
+	.quiz-v2-title{margin:10px 0 0 0; padding:0; text-align:left;}
+	.quiz-v2-title .likes{margin:0 0 0 0px; width:65px;}
+	.quiz-v2-title h2{margin:10px auto 0 auto; width:96%;}
+	.quiz-v2-title p{padding:0 2%; text-align:left;}
+	.hidden-md{display:block;}
+	.hidden-xs{display:none;}
+	.trend-editor{margin:0px 0 10px 0; padding:0 2%; width:96%;}
+	.trend-story p.story-txt{margin:0; padding:0; font-size:16px;}
+	.trend-story{margin:0 0 90px 0; width:45%; float:left;}
+	.trend-story-msg h5, .trend-story-msg p{margin:10px 0 3px 0; text-align:center; font-size:14px;}
+	.bottom-stories{margin:20px 0 50px 0; padding:0 0 0 2%; width:98%;}
+	
+	.quiz-version-two{padding-left:2%; width:90%;}
+	.share-shop .shop-new{background:#ce269d; width:96%;}
+	
+	.quiz-large-img{margin:0 -2%;}
+	
+	.qna{margin:30px 0 30px 0; padding:0 2%; width:96%;}
+	.qna ul li h2.question-no, .qna ul li h4.question{margin:0 10px 0 0; padding:0; font-size:30px; width:10%;}
+	.qna ul li h4.question{margin:0; padding:10px 0px 0px 0px; font-size:17px; width:85%;}
+	.qna ul li p{margin:0 0 25px 20px; padding:0; font-size:15px; color:#000; width:80%;}
+	
+	.story-category{width:97%; margin:10px 0 10px 2%; float:left; min-height:437px;}
+	.bodycontent{width:96%; margin:0 2% 0 2%;}
+	.fashionreelcontent{width:96%; margin:0 2% 0 2%;}
+	
+	.event-reviews{margin:0; padding:0 2%; width:96%;}
+	.event-look-one{margin:0 0 30px 0; padding:0; width:100%;}
+	.left-large-img{margin:0 0 15px 0; padding:0; width:100%;}
+	.event-right{margin:0; padding:0; width:100%;}
+	.event-right img{width:auto;}
+	.lookone-mini-img, .lookone-content{margin:0; padding:0; width:50%;}
+	.lookone-content{margin:0 0 0 5%; padding:0; width:45%;}
+	.event-look-one .view, .event-look-two .view{text-align:left; position:static; bottom:auto; left:auto; width:100%;}
+	.event-reviews h2, .event-right p{margin:0px 0px 8px 0px; padding:0; font-size:20px;}
+	.event-right p{font-size:15px;}
+	.look-two-content{margin:0; padding:0px; width:45%; position:static; bottom:auto; left:auto; float:left;}
+	.look-two-content p{margin-bottom:0px; font-size:15px;}
+	.event-look-three .left-large-img{margin:0; padding:0; width:49%; float:left;}
+	
+	#wrapper{width: 540px; margin: 20px auto;}
+	.viewport{width: 490px; height: 335px; margin:0 auto;}
+	.viewport li a{display: block; width: 236px; height: auto;}
+	.viewport li a h4{font-size:9px;}
+	.viewport li a h5{font-size:9px;}
+	.viewport li a p{font-size:11px;}
+	
+	.fashion-stories{margin:0; padding:0; width:100%;}
+	.fashion-stories .look-of-day-para{margin:0px 0px 0px 0px; padding:20px 2% 30px 2%!important; width:96%;}
+	.fashion-story-img{width:100%;}
+	.fashion-middle-story{width:100%; float:left;}
+	.fashion-middle-story ul li{padding:5px 0px; width:99%; vertical-align:top;}
+	.position-fstory, .position-fstory-1{position:absolute; top:10%; left:55%; width:30%; background-color:#fff;}
+	.position-fstory-1{top:5%; left:53%;}
+	.margin-xs{margin-bottom:30px;}
+	.left-position{left:11%;}
+	.full-width-trend{width:96%;}
+	
+	.rm-height{height:40px; overflow-y:hidden;}
+	.rm-height-look{height:80px; overflow-y:hidden;}
+	
+	.image1 img{height:auto; overflow-y:auto;}
+	
+	.hidden-xs-fs{display:none;}
+	.hidden-md-fs{display:block;}
+	.fashion-middle-story ul li.hidden-md-fs{display:block;}
+	.top-gap-mobile{margin:44px 0px 0px 0px;}
+	
+	.fashion-middle-story ul li p{font-size:14px; padding:15px 0;}
+	
+
+}
+
+
+
+@media only screen and (min-width: 667px) {
+	
+	#wrapper{width: 650px; margin: 20px auto;}
+	.viewport{width: 580px; height: 420px; margin:0 auto;}
+	.viewport li a{display: block; width: 282px; height: auto;}
+	.viewport li a h4{font-size:9px;}
+	.viewport li a h5{font-size:9px;}
+	.viewport li a p{font-size:11px;}
+	
+	.hidden-xs-fs{display:none;}
+	.hidden-md-fs{display:block;}
+	.fashion-middle-story ul li.hidden-md-fs{display:block;}
+	.top-gap-mobile{margin:44px 0px 0px 0px;}
+
+	.fashion-middle-story ul li p{font-size:14px; padding:15px 0;}
+	
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	.main-content{margin:0px auto; padding:0px; width:768px;}
+	.wrapper{margin:0px auto; padding:0px; width:768px;}
+	.top-nav{margin:0px 0px 0px 0px; padding:5px 2%; width:96%; position:fixed; top:0; left:0; background:rgba(255,255,255,0.8);}
+	.trending-inner-content{margin:0px; padding:0px; width:100%; text-align:center;}
+	.look-of-day{margin:0px; padding:0px 0px 35px 0px; width:100%; position:relative;}
+	.look-of-day-hotnot{margin:0px; padding:0px 0px 35px 0px; width:100%; position:relative;}
+	.look-of-day img.look{width:100%;}
+	.title{margin:0px 5%; padding:5%; width:80%; position:absolute; bottom:-22px; left:0;}
+	.items{margin:0px; padding:0px; width:100%; position:static; top:0; right:0;}
+	.ralated-stories{margin:30px 0px 30px 0px; width:97%;}
+	.bt{margin:10px 0px 35px 0px; width:517px;}
+	.nbs-flexisel-nav-left{left: 8px;}
+	.nbs-flexisel-nav-right{right: -50px;}
+	.nbs-flexisel-inner{margin-left:30px;}
+	.nbs-flexisel-container{position:relative; max-width:91%; width:700px;}	
+	.nbs-flexisel-item img{width: 90%;}
+	.nbs-flexisel-nav-left, .nbs-flexisel-nav-right{top:120px!important;}
+	.bottom-head{margin:0px; padding:15px 0px; font-size:11px; text-align:left; width:91%;}
+	.look-of-day-para{padding:0px 6% 10px 6%; width:84%; text-align:left;}
+	.fashion-reviews .look-of-day-para{padding:0px 2% 10px 2%; width:95%; text-align:left;}
+	.back-to a{font-size:13px; padding-left:0px;}
+	.title h1, .hotnot .title h1{font-size:35px;}
+	.share{padding:12px 30px 12px 65px; background:url(../images/share.png) 25px center no-repeat; font-size:16px; width:auto;}
+	.shop{padding:13px 40px 13px 85px; background:#ce269d url(../images/shop.png) 45px center no-repeat; font-size:16px; width:auto;}
+	.rs-title{margin:0px 0px 35px 40px; width:170px; font-size:15px;}
+	.view-more{margin:20px 0px; padding:15px 40px; width:auto;}
+	.items ul{margin:0px 20%; width:60%; float:left;}
+	.share-shop, .shop-look{margin:0px 20%; width:57%;}
+	.bottom-title{font-size:10px; margin:0px; padding:10px 0px 10px 5%; width:90%;} 
+	
+	.hotnot{margin:0px 5% 0px 5%; position:static; top:auto; left:auto; width:90%; float:left; position:relative; z-index:1001;}
+	.hotornot{margin:0px; padding:0px 5% 10px 5%; width:90%; float:left;}
+	.hotornot ul{margin:0px 20% width:80%!important;}
+	.increase, .decrease{margin:20px 5% 0px 5%;}
+	.progress{margin:5px 0px 0px 0px; width:100%;}
+	.hotnot .title{padding:10px 5%; min-height:150px;}
+	.verdict{padding:0px 0 10px 0%; text-align:center;}
+	.hotnot .time{margin:5px 0px 20px 15px; font-size:13px; color:#898989; display:block;}
+	
+	.title-hotnot h1{margin:0px 0px 5px 10px; padding:0px; font-size:35px;}
+	.fashion-reviews .title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:24px;}
+	.title-hotnot h3{margin:0px 0px 0px 10px;}
+	.likes, .fill{margin:5px 0px 15px 10px;}
+	.title-hotnot{margin:10px 0px 10px 0px; padding:0;  width:100%;}
+	.fashion-reviews .title-hotnot{margin:0px 0px 10px 0px; padding:0;  width:100%;}
+	
+	.nbs-flexisel-item img {max-width:230px; max-height:248px;}
+	
+	.fashion-reviews-pic{margin:0px; padding:0px 0px 35px 0px; width:100%;}
+	.fashion-reviews{margin:0px; padding:0px; width:100%; min-height:300px;}
+	.para-size{font-size:16px;}
+	.italic{font-size:16px;}
+	.shop-look .shop-action{margin:12px 0px 0px 0px; padding:13px 0px 13px 0px; font-size:16px; width:100%; text-align:center;}
+	.rs-title-middle{margin:0; padding:0 15px; left:27%;}
+	.bt-full{margin:10px 2% 35px 2%; width:96%;}
+	.shop-look{position:static; bottom:auto; left:auto;}
+	
+	.news-inside{margin:0; padding:0 0 0 0; width:100%; position:static; bottom:auto; left:auto;}
+	.first-letter:first-letter{font-size:40px;}
+	.news-inside .shop-look{position:static; margin:0px 20%;}
+	
+	.quiz{margin:0 2% 0 2%; padding:0; width:96%;}
+	.quiz h3{text-align:left; font-size:16px;}
+	.find-style li{margin:0; padding:0px 0px 8px 8px; float:left; width:47%;}
+	.find-style li:first-child, .find-style li:nth-child(3){padding-left:0;}
+	.find-style li:nth-child(2), .find-style li:nth-child(4){float:right; text-align:right; padding-right:0;}
+	
+	.quiz-v2-title{margin:10px 0 0 0; padding:0; text-align:left;}
+	.quiz-v2-title .likes{margin:0 0 0 15px; width:65px;}
+	.quiz-v2-title h2{margin:10px auto 0 auto; width:96%;}
+	..quiz-v2-title p{padding:0 2%; text-align:left;}
+	.hidden-md{display:block;}
+	.hidden-xs{display:none;}
+	.trend-editor{margin:0px 0 10px 0; padding:0 2%; width:96%;}
+	.trend-story p.story-txt{margin:0; padding:0; font-size:20px;}
+	.trend-story{margin:0 0 90px 0; width:45%; float:left;}
+	.trend-story-msg h5, .trend-story-msg p{margin:10px 0 3px 0; text-align:center; font-size:15px;}
+	.bottom-stories{margin:20px 0 50px 0; padding:0 0 0 2%; width:98%;}
+	
+	.quiz-version-two{padding-left:2%; width:90%;}
+	.share-shop .shop-new{background:#ce269d; width:96%;}
+	
+	.quiz-large-img{margin:0;}
+	
+	.qna{margin:30px 0 30px 0; padding:0 2%; width:96%;}
+	.qna ul li h2.question-no, .qna ul li h4.question{margin:0 10px 0 0; padding:0; font-size:45px;}
+	.qna ul li h4.question{margin:0; padding:25px 0px 0px 0px; font-size:20px;}
+	.qna ul li p{margin:0 0 25px 20px; padding:0; font-size:15px; color:#000; width:85%;}
+	
+	.story-category{width:97%; margin:10px 0 10px 2%; float:left; min-height:200px;}
+	.bodycontent{width:96%; margin:0 2% 0 2%;}
+	.fashionreelcontent{width:96%; margin:0 2% 0 2%;}
+	
+	.event-reviews{margin:0; padding:0 2%; width:96%;}
+	.event-look-one{margin:0 0 30px 0; padding:0; width:100%;}
+	.left-large-img{margin:0 0 15px 0; padding:0; width:100%;}
+	.event-right{margin:0; padding:0; width:100%;}
+	.event-right img{width:auto;}
+	.lookone-mini-img, .lookone-content{margin:0; padding:0; width:50%;}
+	.lookone-content{margin:0 0 0 5%; padding:0; width:45%;}
+	.event-look-one .view, .event-look-two .view{text-align:left; position:static; bottom:auto; left:auto; width:100%;}
+	.event-reviews h2, .event-right p{margin:0px 0px 8px 0px; padding:0; font-size:20px;}
+	.event-right p{font-size:16px;}
+	.look-two-content{margin:0; padding:0px; width:45%; position:static; bottom:auto; left:auto; float:left;}
+	.look-two-content p{margin-bottom:0px; font-size:15px;}
+	.event-look-three .left-large-img{margin:0; padding:0; width:42%; float:left;}
+	
+	#wrapper{width: 740px; margin: 20px auto;}
+	.viewport{width: 690px; height: 420px; margin:0 auto;}
+	.viewport li a{display: block; width: 221px; height: auto;}
+	.viewport li a h4{font-size:12px;}
+	.viewport li a h5{font-size:10px;}
+	.viewport li a p{font-size:13px;}
+	
+	.fashion-stories{margin:0; padding:0; width:100%;}
+	.fashion-stories .look-of-day-para{margin:0px 0px 0px 0px; padding:20px 0px 30px 0px!important; width:100%;}
+	.fashion-story-img{width:100%;}
+	.fashion-middle-story{width:100%; float:left;}
+	.fashion-middle-story ul li{padding:5px 0px; width:99%; vertical-align:top;}
+	.position-fstory, .position-fstory-1{position:absolute; top:10%; left:55%; width:30%; background-color:#fff;}
+	.position-fstory-1{top:5%; left:53%;}
+	.margin-xs{margin-bottom:30px;}
+	.left-position{left:11%;}
+	.full-width-trend{width:84%;}
+	
+	.rm-height{height:115px; overflow-y:hidden;}
+	
+	.image1 img{height:auto; overflow-y:auto;}
+	
+	.hidden-xs-fs{display:none;}
+	.hidden-md-fs{display:block;}
+	.fashion-middle-story ul li.hidden-md-fs{display:block;}
+	.top-gap-mobile{margin:44px 0px 0px 0px;}
+	
+	.fashion-middle-story ul li p{font-size:14px; padding:15px 0;}
+	
+
+}
+
+
+@media only screen and (min-width: 960px) {
+	
+	.main-content{margin:0px auto; padding:0px; width:880px;}
+	.wrapper{margin:0px auto; padding:0px; width:960px;}
+	.top-nav{margin:60px 0px 30px 0px; padding:0; width:100%; position:static; top:0; left:0; background:none;}
+	.trending-inner-content{margin:0px; padding:0px; width:100%; text-align:left;}
+	.look-of-day{margin:0px; padding:0px 0px 35px 0px; width:450px; position:relative;}
+	.look-of-day-hotnot{margin:0px; padding:0px 20px 35px 0px; width:460px; position:relative; float:left;}
+	.look-of-day img.look{width:auto; min-height:700px;}
+	.title{margin:0px; padding:30px; width:290px; position:absolute; bottom:-22px; left:10%;}
+	.items{margin:0px; padding:0px; width:45%; position:absolute; top:0; right:0;}
+	.ralated-stories{margin:30px 0px 30px 0px; width:943px;}
+	.bt{margin:10px 0px 35px 0px; width:690px;}
+	.nbs-flexisel-nav-left{left: 0px;}
+	.nbs-flexisel-nav-right{right: -55px;}
+	.nbs-flexisel-inner{margin-left:30px;}
+	.nbs-flexisel-container{margin-left:0; position:relative; max-width:880px; width:880px;}
+	.nbs-flexisel-item img{width: 93%;}
+	.nbs-flexisel-nav-left, .nbs-flexisel-nav-right{top:150px!important;}
+	.bottom-head{margin:0px; padding:15px 0px; font-size:12px; text-align:left; width:92.5%;}
+	.look-of-day-para{padding:0px 0% 10px 9%; width:86%; text-align:left;}
+	.fashion-reviews .look-of-day-para{padding:0px 0% 10px 9%; width:86%; text-align:left;}
+	.back-to a{font-size:13px; padding-left:0px;}
+	.title h1, .hotnot .title h1{font-size:38px;}
+	.share{padding:12px 30px 12px 65px; background:url(../images/share.png) 25px center no-repeat; font-size:16px; width:auto;}
+	.shop{padding:13px 40px 13px 85px; background:#ce269d url(../images/shop.png) 45px center no-repeat; font-size:16px; width:auto;}
+	.rs-title{margin:0px 0px 35px 40px; width:180px; font-size:16px;}
+	.view-more{margin:20px 0px; padding:15px 40px; width:auto;}
+	.items ul{margin:0px; width:auto; float:none;}
+	.share-shop, .shop-look{margin:0px; width:100%;}
+	.bottom-title{font-size:10px; width:91%; padding:10px 0px 10px 5%; margin:0;}
+	
+	.look-of-day img.look-hotnot{width:auto;}
+	
+	.hotnot{margin:0px; position:static; top:auto; left:auto; width:400px; float:left;}
+	.hotornot{margin:0px; padding:0px 5% 10px 5%; width:90%; float:left;}
+	.hotornot ul{width:100%!important;}
+	.increase, .decrease{margin:20px 0px 0px 0px;}
+	.progress{margin:5px 0px 0px 0px; width:80%;}
+	.hotnot .title{padding:0 5%;}
+	.verdict{padding:15% 0 10px 0%; text-align:left;}
+	.hotnot .time{margin:0px 0px 20px 10px; font-size:15px; color:#000; display:inline;}
+	
+	.title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:38px;}
+	.fashion-reviews .title-hotnot h1{margin:0px 0px 10px 0px; padding:0px; font-size:25px;}
+	.title-hotnot h3{margin:0px;}
+	.likes, .fill{margin:5px 0px 15px 0px;}
+	.title-hotnot{margin:0px 0px 10px 0px; padding:0; width:100%;}
+	.fashion-reviews .title-hotnot{margin:0px 0px 10px 0px; padding:0; width:100%;}
+	
+	.nbs-flexisel-item img {max-width:300px; max-height:318px;}
+	
+	.fashion-reviews-pic{margin:0px; padding:0px 0px 35px 0px; width:495px;}
+	.fashion-reviews{margin:0px; padding:0px; width:373px; min-height:722px;}
+	.para-size, .italic{font-size:16px;}
+	.shop-look .shop-action{margin:12px 0px 0px 0px; padding:13px 40px 13px 40px; font-size:16px; width:auto; text-align:left;}
+	.rs-title-middle{margin:0; padding:0 15px; left:37%;}
+	.bt-full{margin:10px 0px 35px 0px; width:100%;}
+	.shop-look{position:absolute; bottom:0; left:auto;}
+	
+	.news-inside{margin:0; padding:0 0 0 5%; width:95%; position:absolute; bottom:0; left:0px;}
+	.first-letter:first-letter{font-size:50px;}
+	.news-inside .shop-look{position:static; margin:0 0 0 0px;}
+	
+	.quiz{margin:0; padding:0; width:100%;}
+	.quiz h3{text-align:left; font-size:16px;}
+	.find-style li{margin:0; padding:0px 0px 8px 8px; float:left; width:23%;}
+	.find-style li:first-child{padding-left:0;}
+	.find-style li:nth-child(3){padding-left:8px;}
+	.find-style li:nth-child(2), .find-style li:nth-child(4){float:left; text-align:left; padding-right:8px;}
+	.find-style li:nth-child(2){padding-right:0;}
+	
+	.quiz-v2-title{margin:10px 0 0 0; padding:0; text-align:center;}
+	.quiz-v2-title .likes{margin:0 auto; width:65px;}
+	.quiz-v2-title h2{margin:10px auto 0 auto; width:70%;}
+	.quiz-v2-title p{padding:0; text-align:left;}
+	.hidden-md{display:none;}
+	.hidden-xs{display:block;}
+	.trend-editor{margin:15px 0 10px 0; padding:0; width:100%;}
+	.trend-story p.story-txt{margin:0; padding:0; font-size:20px;}
+	.trend-story{margin:0 0 90px 0; width:33%; float:left;}
+	.trend-story-msg h5, .trend-story-msg p{margin:10px 0 3px 0; text-align:center; font-size:17px;}
+	.bottom-stories{margin:20px 0 50px 0; padding:0; width:100%;}
+	
+	.quiz-version-two{padding-left:0; width:93%;}
+	.share-shop .shop-new{background:#ce269d; width:57%;}
+	
+	.quiz-large-img{margin:0;}
+	
+	.qna{margin:30px 0 30px 0; padding:0; width:100%;}
+	.qna ul li h2.question-no, .qna ul li h4.question{margin:0 10px 0 0; padding:0; font-size:45px; width:5%;}
+	.qna ul li h4.question{margin:0; padding:25px 0px 0px 0px; font-size:20px; width:90%;}
+	.qna ul li p{margin:0 0 25px 20px; padding:0; font-size:16px; color:#000; width:85%;}
+	
+	.story-category{width:31%; margin:1% 0 1% 2%; float:left; min-height:437px;}
+	.bodycontent{width:100%; margin:0 0 0 0;}
+	.fashionreelcontent{width:100%; margin:0px;}
+	
+	.event-reviews{margin:0; padding:0 5%; width:90%;}
+	.event-look-one{margin:0 0 30px 0; padding:0; width:100%;}
+	.left-large-img{margin:0 4% 0 0; padding:0; width:45%;}
+	.event-right{margin:0; padding:0; width:49%;}
+	.event-right img{width:100%;}
+	.lookone-mini-img, .lookone-content{margin:0; padding:0; width:100%;}
+	.event-look-one .view{text-align:left; position:absolute; bottom:5px; left:49%; width:250px;}
+	.event-look-two .view, .event-look-three .view{text-align:left; position:absolute; bottom:0px; left:0; width:250px;}
+	.event-reviews h2, .event-right p{margin:8px 0px 8px 0px; padding:0; font-size:22px;}
+	.event-right p{font-size:16px;}
+	.look-two-content{margin:0; padding:15px 15px 15px 0px; width:35%; position:absolute; bottom:0; left:0; float:none;}
+	.look-two-content p{margin-bottom:100px; font-size:16px;}
+	.event-look-three .left-large-img{margin:0; padding:0; width:49%; float:left;}
+	
+	#wrapper{width: 943px; margin: 20px auto;}
+	.viewport{width: 880px; height: 430px; margin-left: 29px;}
+	.viewport li a{display: block; width: 285px; height: auto;}
+	.viewport li a h4{font-size:12px;}
+	.viewport li a h5{font-size:10px;}
+	.viewport li a p{font-size:13px;}
+	
+	.fashion-stories{margin:0; padding:0; width:550px;}
+	.fashion-stories .look-of-day-para{margin:10% 0px 0px -5%; padding:20px 0px 30px 5%!important; width:41%;}
+	.fashion-story-img{width:330px;}
+	.fashion-middle-story{width:50%; float:right;}
+	.fashion-middle-story ul li{padding:25px 0px; width:49%; vertical-align:top;}
+	.position-fstory, .position-fstory-1{position:static; top:auto; left:auto; width:auto; background-color:none;}
+	.margin-xs{margin-bottom:0px;}
+	.left-position{left:auto;}
+	
+	.rm-height{height:115px; overflow-y:hidden;}
+	
+	.image1 img{height:326px; overflow-y:hidden;}
+	
+	.hidden-xs-fs{display:block;}
+	.hidden-md-fs{display:none;}
+	.fashion-middle-story ul li.hidden-md-fs{display:none;}
+	.top-gap-mobile{margin:0px 0px 0px 0px;}
+	
+	.fashion-middle-story ul li p{font-size:14px; padding:0;}
+
+	
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+	
+	.main-content{margin:0px auto; padding:0px; width:980px;}
+	.wrapper{margin:0px auto; padding:0px; width:980px;}
+	.top-nav{margin:60px 0px 30px 0px; padding:0; width:100%; position:static; top:0; left:0; background:none;}
+	.trending-inner-content{margin:0px; padding:0px; width:100%; text-align:left;}
+	.look-of-day-hotnot{margin:0px; padding:0px 20px 35px 0px; width:560px; position:relative; float:left;}
+	.look-of-day{margin:0px; padding:0px 40px 35px 0px; width:540px; position:relative;}
+	.look-of-day img.look{width:auto; min-height:700px;}
+	.title{margin:0px 5%; padding:5%; width:73%; position:absolute; bottom:-22px; left:0;}
+	.items{margin:0px; padding:0px; width:400px; position:absolute; top:0; right:0;}
+	.ralated-stories{margin:30px 0px 30px 0px; width:980px;}
+	.bt{margin:10px 0px 35px 0px; width:717px;}
+	.nbs-flexisel-nav-left{left: 5px;}
+	.nbs-flexisel-nav-right{right: -52px;}
+	.nbs-flexisel-inner{margin-left:30px;}
+	.nbs-flexisel-container{margin-left:0; position:relative; max-width:920px; width:920px;}
+	.nbs-flexisel-item img{width: 95%;}
+	.nbs-flexisel-nav-left, .nbs-flexisel-nav-right{top:200px!important;}
+	.bottom-head{margin:0px 0px; padding:15px 0px; font-size:12px; text-align:left; width:94.5%;}
+	.look-of-day-para{padding:0px 0% 10px 6%; width:91%; text-align:left;}
+	.fashion-reviews .look-of-day-para{padding:0px 0% 10px 6%; width:94%; text-align:left;}
+	.back-to a{font-size:13px; padding-left:0px;}
+	.title h1, .hotnot .title h1{font-size:38px;}
+	.share{padding:12px 35px 12px 65px; background:url(../images/share.png) 35px center no-repeat; font-size:16px; width:auto; text-align:center;}
+	.shop{padding:13px 48px 13px 82px; background:#ce269d url(../images/shop.png) 47px center no-repeat; font-size:16px; width:auto; text-align:center;}
+	.rs-title{margin:0px 0px 35px 40px; width:180px; font-size:16px;}
+	.view-more{margin:20px 0px; padding:15px 40px; width:auto;}
+	.items ul{margin:0px; width:auto; float:none;}
+	.share-shop, .shop-look{margin:0px; width:100%;}
+	.bottom-title{font-size:10px; padding:10px 0 10px 2%; margin:0; width:95%;}
+	
+	.hotnot{margin:0px; position:static; top:auto; left:auto; width:400px; float:left;}
+	.hotornot{margin:0px; padding:0px 5% 10px 5%; width:90%; float:left;}
+	.hotornot ul{width:100%!important;}
+	.increase, .decrease{margin:20px 0px 0px 0px;}
+	.progress{margin:5px 0px 0px 0px; width:80%;}
+	.hotnot .title{padding:0 5%;}
+	.verdict{padding:36% 0 10px 0%; text-align:left;}
+	.hotnot .time{margin:0px 0px 20px 10px; font-size:15px; color:#000; display:inline;}
+	
+	.look-of-day img.look-hotnot{width:auto;}
+	
+	.m-top{margin:40px 0px 0px 0px;}
+	
+	.items ul li img{width:100%;}
+	
+	.title-hotnot h1{margin:0px 0px 5px 0px; padding:0px; font-size:38px;}
+	.fashion-reviews .title-hotnot h1{margin:0px 0px 15px 0px; padding:0px; font-size:28px;}
+	.title-hotnot h3{margin:0px;}
+	.likes, .fill{margin:5px 0px 15px 0px;}
+	.title-hotnot{margin:0px 0px 10px 0px; padding:0; width:100%;}
+	.fashion-reviews .title-hotnot{margin:0px 0px 10px 0px; padding:0; width:100%;}
+	
+	.nbs-flexisel-item img {max-width:300px; max-height:318px;}
+	
+	.fashion-reviews-pic{margin:0px; padding:0px 0px 35px 0px; width:494px;}
+	.fashion-reviews{margin:0px; padding:0px; width:486px; min-height:722px;}
+	.para-size{font-size:17px;}
+	.italic{font-size:19px;}
+	.shop-look .shop-action{margin:12px 0px 0px 0px; padding:13px 40px 13px 40px; font-size:16px; width:auto; text-align:left;}
+	.rs-title-middle{margin:0; padding:0 15px; left:37%;}
+	.bt-full{margin:10px 0px 35px 0px; width:100%;}
+	.shop-look{position:absolute; bottom:0; left:auto;}
+	
+	.news-inside{margin:0; padding:0 0 0 5%; width:95%; position:absolute; bottom:0; left:0px;}
+	.first-letter:first-letter{font-size:80px; float:left; line-height:80px;}
+	.news-inside .shop-look{position:static; margin:0 0 0 0px;}
+	
+	.quiz{margin:0; padding:0; width:100%;}
+	.quiz h3{text-align:left; font-size:16px;}
+	.find-style li{margin:0; padding:0px 0px 8px 8px; float:left; width:23%;}
+	.find-style li:first-child{padding-left:0;}
+	.find-style li:nth-child(3){padding-left:8px;}
+	.find-style li:nth-child(2), .find-style li:nth-child(4){float:left; text-align:left; padding-right:8px;}
+	.find-style li:nth-child(2){padding-right:0;}
+	
+	.quiz-v2-title{margin:10px 0 0 0; padding:0; text-align:center;}
+	.quiz-v2-title .likes{margin:0 auto; width:65px;}
+	.quiz-v2-title h2{margin:10px auto 0 auto; width:70%;}
+	.quiz-v2-title p{padding:0; text-align:left;}
+	.hidden-md{display:none;}
+	.hidden-xs{display:block;}
+	.trend-editor{margin:15px 0 10px 0; padding:0; width:100%;}
+	.trend-story p.story-txt{margin:0; padding:0; font-size:24px;}
+	.trend-story{margin:0 0 90px 0; width:33%; float:left;}
+	.trend-story-msg h5, .trend-story-msg p{margin:10px 0 3px 0; text-align:center; font-size:17px;}
+	.bottom-stories{margin:20px 0 50px 0; padding:0; width:100%;}
+	
+	.quiz-version-two{padding-left:0; width:95%;}
+	.share-shop .shop-new{background:#ce269d; width:57%;}
+	
+	.quiz-large-img{margin:0;}
+	
+	.qna{margin:30px 0 30px 0; padding:0; width:100%;}
+	.qna ul li h2.question-no, .qna ul li h4.question{margin:0 10px 0 0; padding:0; font-size:45px; width:5%;}
+	.qna ul li h4.question{margin:0; padding:25px 0px 0px 0px; font-size:20px; width:90%;}
+	.qna ul li p{margin:0 0 25px 20px; padding:0; font-size:16px; color:#000; width:85%;}
+	
+	.story-category{width:31%; margin:1% 0 1% 2%; float:left; min-height:437px;}
+	.bodycontent{width:100%; margin:0 0 0 0;}
+	.fashionreelcontent{width:100%; margin:0px;}
+	
+	.event-reviews{margin:0; padding:0 5%; width:90%;}
+	.event-look-one{margin:0 0 30px 0; padding:0; width:100%;}
+	.left-large-img{margin:0 4% 0 0; padding:0; width:45%;}
+	.event-right{margin:0; padding:0; width:50%;}
+	.event-right img{width:100%;}
+	.lookone-mini-img, .lookone-content{margin:0; padding:0; width:100%;}
+	.event-look-one .view{text-align:left; position:absolute; bottom:5px; left:49%; width:250px;}
+	.event-look-two .view, .event-look-three .view{text-align:left; position:absolute; bottom:0px; left:0; width:250px;}
+	.event-reviews h2, .event-right p{margin:8px 0px 8px 0px; padding:0; font-size:22px;}
+	.event-right p{font-size:16px;}
+	.look-two-content{margin:0; padding:15px 15px 15px 0px; width:39%; position:absolute; bottom:0; left:0; float:none;}
+	.look-two-content p{margin-bottom:100px; font-size:16px;}
+	.event-look-three .left-large-img{margin:0; padding:0; width:50%; float:left;}
+
+	#wrapper{width: 980px; margin: 20px auto;}
+	.viewport{width: 928px; height: 430px; margin-left: 29px;}
+	.viewport li a{display: block; width: 300px; height: auto;}
+	.viewport li a h4{font-size:12px;}
+	.viewport li a h5{font-size:10px;}
+	.viewport li a p{font-size:13px;}
+	
+	.fashion-stories{margin:0; padding:0; width:638px;}
+	.fashion-stories .look-of-day-para{margin:10% 0px 0px -5%; padding:20px 0px 30px 5%!important; width:41%;}
+	.fashion-story-img{width:342px;}
+	.fashion-middle-story{width:50%; float:right;}
+	.fashion-middle-story ul li{padding:25px 0px; width:49%; vertical-align:top;}
+	.position-fstory, .position-fstory-1{position:static; top:auto; left:auto; width:auto; background-color:none;}
+	.margin-xs{margin-bottom:0px;}
+	.left-position{left:auto;}
+	
+	.rm-height{height:115px; overflow-y:hidden;}
+	
+	.image1 img{height:326px; overflow-y:hidden;}
+	
+	.hidden-xs-fs{display:block;}
+	.hidden-md-fs{display:none;}
+	.fashion-middle-story ul li.hidden-md-fs{display:none;}
+	.top-gap-mobile{margin:0px 0px 0px 0px;}
+	
+	.fashion-middle-story ul li p{font-size:14px; padding:0;}
+	
+
+}
